@@ -1,0 +1,134 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:linear-gradient(to right, #6DD5FA, #FF758C);
+    color: #333;;
+  }
+  
+  #todo-app {
+    width: 50%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 35px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background:linear-gradient(to left, #6DD5FA, #FF758C);
+  }
+  
+  #todo-form input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  #todo-form button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #b887cf;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #todo-form button:hover {
+    background-color: #5A9BD3;
+  }
+  
+  #todo-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #todo-list li {
+    background-color: #f9f9f9;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+/* .delete-btn {
+    background-color: #4682B4; /* Steel blue background */
+    /* color: white;              /* White text */
+    /* border: none;              /* No border */
+    /* padding: 10px 20px;        /* Padding */
+    /* border-radius: 5px;        /* Rounded corners */
+    /* cursor: pointer;           /* Pointer cursor on hover */
+    /* font-size: 16px;           /* Font size */
+/* } */ 
+
+.delete-btn{
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #5A9BD3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.delete-btn:hover {
+    background-color: #b887cf; 
+}
+.edit-btn{
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #5A9BD3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-btn:hover{
+    background-color: #b887cf; 
+
+}
+
+/* Hide the default checkbox */
+.custom-checkbox {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    background-color: #eee;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    border: 1px solid #ddd;
+}
+
+/* Hover effect */
+.custom-checkbox:hover {
+    background-color: #9047b3;
+}
+
+/* Custom checkbox checked state */
+.custom-checkbox:checked {
+    background-color: #4682B4;
+    border-color: #4682B4;
+}
+
+/* Custom checkmark when checked */
+.custom-checkbox:checked::before {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
